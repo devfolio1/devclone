@@ -95,24 +95,24 @@ const Footer = () => {
                 </div>
 
                 <div>
-                  <h3 class="text-gray-700 uppercase dark:text-white">Blog</h3>
+                  <h3 class="text-gray-700 uppercase dark:text-white">Security & Privacy</h3>
                   <a
                     href="#"
                     class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
-                    Tec
+                    privacy policy
                   </a>
                   <a
                     href="#"
                     class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
-                    Music
+                    Terms and Conditions
                   </a>
                   <a
                     href="#"
                     class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
-                    Videos
+                   Cancellation / Refund policy
                   </a>
                 </div>
 
@@ -150,11 +150,11 @@ const Footer = () => {
                   <h3 class="text-gray-700 uppercase dark:text-white">
                     Contact
                   </h3>
-                  <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
+                  {/* <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
                     +1 526 654 8965
-                  </span>
+                  </span> */}
                   <span class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline">
-                    example@email.com
+                    devfolio1@gmail.com
                   </span>
                 </div>
               </div>
@@ -165,7 +165,7 @@ const Footer = () => {
 
           <div>
             <p class="text-center text-gray-500 dark:text-gray-400">
-              © Brand 2020 - All rights reserved
+              © Devfolio 2023 - All rights reserved
             </p>
           </div>
         </div>

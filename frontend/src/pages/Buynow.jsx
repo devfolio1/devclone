@@ -11,6 +11,9 @@ import { createOrder, clearErrors, confirmOrder } from "../actions/orderAction";
 import CheckoutSteps from "../components/CheckOutSteps";
 import NotFound from "../components/Layouts/NotFound";
 import myclone from "../images/myclone.png";
+import janewilson from "../images/janewilson.png";
+import port3 from "../images/port3.png";
+import port2 from "../images/port2.png";
 
 const Buynow = ({ history}) => {
   const [username, setUsername] = useState("");
@@ -93,7 +96,7 @@ const Buynow = ({ history}) => {
       currency: "INR",
       name: "DevFolio",
       description: "payment for portfolio",
-      // image: "https://avatars.githubusercontent.com/u/25058652?v=4",
+    
       order_id: order.id,
       callback_url: "http://localhost:4000/api/v1/paymentverification",
       prefill: {
@@ -364,7 +367,7 @@ console.log(cost)
                     handleImageUpload();
                   }}
                 >
-                  Submit
+                  Upload
                 </button>
                 <label class="text-gray-700 mt-5" for="service">
                   SERVICES YOU OFFER:
@@ -576,6 +579,33 @@ console.log(cost)
               <div
               class="overflow-hidden bg-cover rounded-lg cursor-pointer h-80 group"
               style={{ backgroundImage: `url(${myclone})` }}
+            >
+            
+              
+            </div>
+            </>)}
+            {cost===400 && (<>
+              <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-80 group"
+              style={{ backgroundImage: `url(${janewilson})` }}
+            >
+            
+              
+            </div>
+            </>)}
+            {cost===600 && (<>
+              <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-80 group"
+              style={{ backgroundImage: `url(${port2})` }}
+            >
+            
+              
+            </div>
+            </>)}
+            {cost===800 && (<>
+              <div
+              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-80 group"
+              style={{ backgroundImage: `url(${port3})` }}
             >
             
               

@@ -21,6 +21,8 @@ import UsersList from "./components/admin/UsersList";
 import UpdateUser from "./components/admin/UpdateUser";
 import Herotest from "./pages/Herotest";
 import { myOrders } from "./actions/orderAction";
+import AboutUs from "./components/Aboutus";
+import ContactUs from "./components/Contactus";
 
 function App() {
   React.useEffect(() => {
@@ -46,6 +48,8 @@ function App() {
         <Route path="/signup" component={Signup} />
         <Route path="/paymentsuccess" component={PaymentSuccess} />
         <Route path="/hero" component={Herotest} />
+        <Route path="/about" component={AboutUs} />
+        <Route path="/contact" component={ContactUs} />
 
         <ProtectedRoute
           isAdmin={true}

@@ -34,10 +34,11 @@ const Hero = () => {
 
             
           </div>
+          
         </div>
-        
+        <Steps />
       </div>
-      <Steps />
+      
     </>
    
   );

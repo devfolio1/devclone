@@ -1,13 +1,14 @@
 
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Link as Dink } from "react-scroll";
 import logo from "../images/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-
+  const { user, loading, isAuthenticated } = useSelector((state) => state.user);
 
 
   return (
@@ -39,12 +40,24 @@ const Navbar = () => {
             About
           </Link>
         </li>
-
+      {isAuthenticated ? (
+        <>
         <li className="px-4 cursor-pointer capitalize font-bold text-black  hover:scale-105  duration-100">
           <Link to="/profile" smooth duration={500}>
             My Profile
           </Link>
         </li>
+        </>
+      ):(
+        <>
+        <li className="px-4 cursor-pointer capitalize font-bold text-black  hover:scale-105  duration-100">
+          <Link to="/login" smooth duration={500}>
+            Login / Signup
+          </Link>
+        </li>
+        </>
+      )}
+       
       </ul>
 
       <div
