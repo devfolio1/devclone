@@ -13,10 +13,10 @@ import port2 from "../images/port2.png";
 const Preview = (props) => {
   const dispatch = useDispatch();
   let history = useHistory();
-  console.log(props.price1)
-  console.log(props.price2)
-  console.log(props.price3)
-  console.log(props.price4)
+  console.log(props.price1);
+  console.log(props.price2);
+  console.log(props.price3);
+  console.log(props.price4);
   const Buy = (cost) => {
     history.push("/BuyNow");
     dispatch(setCost(cost));
@@ -40,9 +40,13 @@ const Preview = (props) => {
                     BASIC
                   </h2>
 
-                  <button className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto">
+                  <a
+                    href="https://myportfolio-clone.vercel.app/"
+                    target="_blank"
+                    className="flex items-center justify-center h-1/6 w-1/2 mx-auto mt-4 text-2xl font-semibold text-white capitalize bg-teal-600"
+                  >
                     PREVIEW
-                  </button>
+                  </a>
 
                   <button
                     onClick={() => {
@@ -50,23 +54,31 @@ const Preview = (props) => {
                     }}
                     className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto"
                   >
-                    <p className="text-center mt-2">BUY NOW FOR {props.symbol}{props.price1}</p>
+                    <p className="text-center mt-2">
+                      BUY NOW FOR {props.symbol}
+                      {props.price1}
+                    </p>
                   </button>
                 </div>
               </div>
               <div className="flex justify-between">
                 <button
                   type="button"
+                  onClick={() => {
+                    Buy(200);
+                  }}
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
-                  BUY NOW FOR {props.symbol}{props.price1}
+                  BUY NOW FOR {props.symbol}
+                  {props.price1}
                 </button>
-                <button
-                  type="button"
+                <a
+                  href="https://myportfolio-clone.vercel.app/"
+                  target="_blank"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
                   Preview
-                </button>
+                </a>
               </div>
             </div>
 
@@ -79,32 +91,44 @@ const Preview = (props) => {
                   <h2 class="text-lg tracking-wider text-blue-400 text-2xl font-semibold text-white capitalize">
                     STANDARD
                   </h2>
-                  <button className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto">
+                  <a
+                    href="https://secondportfolio-seven.vercel.app/"
+                    target="_blank"
+                    className="flex items-center justify-center h-1/6 w-1/2 mx-auto mt-4 text-2xl font-semibold text-white capitalize bg-teal-600"
+                  >
                     PREVIEW
-                  </button>
+                  </a>
                   <button
                     onClick={() => {
                       Buy(400);
                     }}
                     className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto"
                   >
-                    <p className="text-center mt-2">BUY NOW FOR {props.symbol}{props.price2}</p>
+                    <p className="text-center mt-2">
+                      BUY NOW FOR {props.symbol}
+                      {props.price2}
+                    </p>
                   </button>
                 </div>
               </div>
               <div className="flex justify-between">
                 <button
+                  onClick={() => {
+                    Buy(400);
+                  }}
                   type="button"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
-                  BUY NOW FOR {props.symbol}{props.price2}
+                  BUY NOW FOR {props.symbol}
+                  {props.price2}
                 </button>
-                <button
-                  type="button"
+                <a
+                  href="https://secondportfolio-seven.vercel.app/"
+                  target="_blank"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
                   Preview
-                </button>
+                </a>
               </div>
             </div>
 
@@ -117,73 +141,97 @@ const Preview = (props) => {
                   <h2 class="text-lg tracking-wider text-blue-400 text-2xl font-semibold text-white capitalize">
                     PREMIUM
                   </h2>
-                  <button className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto">
+                  <a
+                    href="https://third-portfolio.vercel.app/"
+                    target="_blank"
+                    className="flex items-center justify-center h-1/6 w-1/2 mx-auto mt-4 text-2xl font-semibold text-white capitalize bg-teal-600"
+                  >
                     PREVIEW
-                  </button>
+                  </a>
                   <button
                     onClick={() => {
                       Buy(600);
                     }}
                     className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto"
                   >
-                    <p className="text-center mt-2">BUY NOW FOR {props.symbol}{props.price3}</p>
+                    <p className="text-center mt-2">
+                      BUY NOW FOR {props.symbol}
+                      {props.price3}
+                    </p>
                   </button>
                 </div>
               </div>
               <div className="flex justify-between">
                 <button
+                  onClick={() => {
+                    Buy(600);
+                  }}
                   type="button"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
-                  BUY NOW FOR {props.symbol}{props.price3}
+                  BUY NOW FOR {props.symbol}
+                  {props.price3}
                 </button>
-                <button
-                  type="button"
+                <a
+                  href="https://third-portfolio.vercel.app/"
+                  target="_blank"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
                   Preview
-                </button>
+                </a>
               </div>
             </div>
-            
+
             <div>
-            <div
-              class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
-              style={{ backgroundImage: `url(${port3})` }}
-            >
-              <div class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                <h2 class="text-lg tracking-wider text-blue-400 text-2xl font-semibold text-white capitalize">
-                  GOLD
-                </h2>
-                <button className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto">
-                  PREVIEW
-                </button>
+              <div
+                class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
+                style={{ backgroundImage: `url(${port3})` }}
+              >
+                <div class="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
+                  <h2 class="text-lg tracking-wider text-blue-400 text-2xl font-semibold text-white capitalize">
+                    GOLD
+                  </h2>
+                  <a
+                    href="https://fourth-portfolio-ks3jw1e4y-devfolio1.vercel.app/"
+                    target="_blank"
+                    className="flex items-center justify-center h-1/6 w-1/2 mx-auto mt-4 text-2xl font-semibold text-white capitalize bg-teal-600"
+                  >
+                    PREVIEW
+                  </a>
+
+                  <button
+                    onClick={() => {
+                      Buy(800);
+                    }}
+                    className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto"
+                  >
+                    <p className="text-center mt-2">
+                      BUY NOW FOR {props.symbol}
+                      {props.price4}
+                    </p>
+                  </button>
+                </div>
+              </div>
+              <div className="flex justify-between">
                 <button
                   onClick={() => {
                     Buy(800);
                   }}
-                  className="mt-4 text-2xl font-semibold text-white capitalize bg-teal-600 w-1/2 h-1/6 mx-auto"
-                >
-                  <p className="text-center mt-2">BUY NOW FOR {props.symbol}{props.price4}</p>
-                </button>
-              </div>
-            </div>
-            <div className="flex justify-between">
-                <button
                   type="button"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
-                  BUY NOW FOR {props.symbol}{props.price4}
+                  BUY NOW FOR {props.symbol}
+                  {props.price4}
                 </button>
-                <button
-                  type="button"
+                <a
+                  href="https://fourth-portfolio-ks3jw1e4y-devfolio1.vercel.app/"
+                  target="_blank"
                   class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 m-6"
                 >
                   Preview
-                </button>
+                </a>
               </div>
             </div>
-            
           </div>
         </div>
       </section>

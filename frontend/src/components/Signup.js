@@ -62,6 +62,8 @@ const Signup = (location) => {
   return (
     <>
     <ToastContainer />
+    <div class="h-screen w-full flex justify-center items-center">
+
       <div class="w-1/2 max-w-sm p-6 m-auto mx-auto bg-white rounded-lg shadow-md mt-20">
         <div className="logo-cont flex w-full h-48">
           <img
@@ -77,9 +79,7 @@ const Signup = (location) => {
           onSubmit={registerSubmit}
         >
           <div>
-            <label for="username" class="block text-sm text-gray-600">
-              Username
-            </label>
+          
             <input
               type="text"
               placeholder="Name"
@@ -91,9 +91,7 @@ const Signup = (location) => {
             />
           </div>
           <div>
-            <label for="username" class="block text-sm text-gray-600 mt-4">
-              Email
-            </label>
+         
             <input
               type="email"
               placeholder="Email"
@@ -106,11 +104,7 @@ const Signup = (location) => {
           </div>
 
           <div class="mt-4">
-            <div class="flex items-center justify-between">
-              <label for="password" class="block text-sm text-gray-800">
-                Password
-              </label>
-            </div>
+            
 
             <input
               type="password"
@@ -142,6 +136,7 @@ const Signup = (location) => {
             <p class="font-medium text-blue-400  hover:underline">Login</p>
           </Link>
         </p>
+      </div>
       </div>
     </>
   );

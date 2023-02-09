@@ -97,19 +97,22 @@ const Footer = () => {
                 <div>
                   <h3 class="text-gray-700 uppercase dark:text-white">Security & Privacy</h3>
                   <a
-                    href="#"
+                    href="/privacy"
+                    target="_blank"
                     class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     privacy policy
                   </a>
                   <a
-                    href="#"
+                    href="/t&c"
+                    target="_blank"
                     class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                     Terms and Conditions
                   </a>
                   <a
-                    href="#"
+                    href="/refund"
+                    target="_blank"
                     class="block mt-2 text-sm text-gray-600 dark:text-gray-400 hover:underline"
                   >
                    Cancellation / Refund policy

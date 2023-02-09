@@ -23,6 +23,10 @@ import Herotest from "./pages/Herotest";
 import { myOrders } from "./actions/orderAction";
 import AboutUs from "./components/Aboutus";
 import ContactUs from "./components/Contactus";
+import Privacypolicy from "./components/Policies/Privacypolicy";
+import RefundPolicy from "./components/Policies/RefundPolicy";
+import TermsAndConditions from "./components/Policies/TermsAndConditions";
+
 
 function App() {
   React.useEffect(() => {
@@ -50,6 +54,9 @@ function App() {
         <Route path="/hero" component={Herotest} />
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={ContactUs} />
+        <Route path="/privacy" component={Privacypolicy} />
+        <Route path="/refund" component={RefundPolicy} />
+        <Route path="/t&c" component={TermsAndConditions} />
 
         <ProtectedRoute
           isAdmin={true}
